@@ -27,7 +27,7 @@ public class FileUtils {
             try {
                 List<String> lines = Files.readAllLines(p, Charset.forName("UTF-8"));
                 writer.print("<section>");
-                lines.forEach(writer::print);
+                lines.forEach(line -> writer.print(line + "\n"));
                 writer.print("</section>");
             } catch (IOException e) {
                 e.printStackTrace();
