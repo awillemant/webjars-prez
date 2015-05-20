@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/slides/*")
+@WebServlet(urlPatterns = "/slides")
 public class SlidesProvider extends HttpServlet {
 
     private static final String SLIDES = "[[SLIDES]]";
